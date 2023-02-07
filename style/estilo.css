@@ -38,10 +38,12 @@ header {
 .menu img {
   margin-left: -45px;
   height: 41px;
+  cursor: pointer;
 }
 .bar {
   background-color: #ccc;
   height: 50px;
+  cursor: pointer;
 }
 .menubar {
   margin-top: 10px;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo.css"/>
+    <script src="index.js"></script>
     <title>Perfumaria</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <form>
                     <input type="text" placeholder="olá, o que você procura?"/>
                 </form>
-                <img src="imagens/pesquisar.jpg"/>
+                <a onclick="onClickScroll('defult-ligth')"><img src="imagens/pesquisar.jpg"/></a>
             </div>
         </div>
     </header>
@@ -26,11 +27,11 @@
         <div class="conteiner">
             <div class="menubar">
                 <ul>
-                    <li><a href="foto.html" target="_blank">Perfumes</a></li>
-                    <li><a href="">Difusores</a></li>
-                    <li><a href="">Ofertas Exclusivas</a></li>
-                    <li><a href="">Preços Imbatíveis</a></li>
-                    <li><a href="">Comprou, ganhou!</a></li>
+                    <li><a onclick="onClick('defult-ligth')">Perfumes</a></li>
+                    <li><a onclick="onClick('sobre')">Sobre Nós</a></li>
+                    <li><a onclick="onClick('service')">Serviços</a></li>
+                    <li><a onclick="onClick('defult-ligth')">Nossos Projetos</a></li>
+                    <li><a onclick="onClick('time')">Nosso Time</a></li>
                     <li><a href="">Venha ver!</a></li>
                 </ul>
             </div>
@@ -56,7 +57,7 @@
     
 
     <section class="defult ligth">
-        <div class="defult_title">MPN PERFUMES</div>
+        <div class="defult_title"  id="sobre">MPN PERFUMES</div>
         <div class="defult_desc">Quem somos nós?</div>
         <div class="defult_body">
             <div class="section_about">
@@ -71,7 +72,7 @@
         </div>
     </section>
 
-    <section class="defult dark">
+    <section class="defult dark" id="service">
         <div class="defult_title">Nossos Serviços</div>
         <div class="defult_desc">Serviços que fornecemos</div>
         <div class="defult_body">
@@ -98,7 +99,7 @@
         </div>
     </section>
 
-    <section class="defult ligth">
+    <section class="defult ligth" id="defult-ligth">
         <div class="defult_title">Nossos Projetos</div>
         <div class="defult_desc">O que Criamos</div>
         <div class="defult_body">
@@ -106,7 +107,7 @@
                 <div class="section_projeto_filters">
                     <ul>
                        <a href=""><li>Tudo</li></a> 
-                       <a href="foto.html" target="_blank"><li class="active">Fotos</li></a>
+                       <a onclick="onClickLink('file:///C:/Users/Usuario/Documents/Portfolio/Perfumaria/assets/foto.html')"><li>Fotos</li></a>
                        <a href=""> <li>Marca</li></a>
                        <a href=""> <li>Anúncios</li></a>
                        <a href=""><li>Desenvolvimento</li></a> 
@@ -218,15 +219,15 @@
         </div>
     </section>
         
-    <section class="defult dark bg_time">
-       <div class="section_time_area">
+    <section class="defult dark bg_time" >
+       <div class="section_time_area" id="time">
         <div class="defult_title">Nosso Time</div>
         <div class="defult_desc">Nossos Colaboradores</div>
         <div class="defult_body">
             <div class="section_area">
                 <div class="section_devs">
                     <div class="section_dev">
-                        <img class="section_time_avatar" src="imagens/dev.jpg"/>
+                        <img class="section_time_avatar" src="imagens/homem1.png"/>
                         <div class="section_time_nome">Marlon Pereira</div>
                         <div class="section_time_funcao">Analista de Sistema</div>
                         <div class="section_time_midia">
@@ -240,7 +241,7 @@
                 </div>
                 <div class="section_devs">
                     <div class="section_dev">
-                        <img class="section_time_avatar" src="imagens/dev.jpg"/>
+                        <img class="section_time_avatar" src="imagens/homem2.png"/>
                         <div class="section_time_nome">Marlon Pereira</div>
                         <div class="section_time_funcao">Desenvolvedor</div>
                         <div class="section_time_midia">
@@ -254,7 +255,7 @@
                 </div>
                 <div class="section_devs">
                     <div class="section_dev">
-                        <img class="section_time_avatar" src="imagens/dev.jpg"/>
+                        <img class="section_time_avatar" src="imagens/homem1.png"/>
                         <div class="section_time_nome">Marlon Pereira</div>
                         <div class="section_time_funcao">Dev Front End</div>
                         <div class="section_time_midia">
